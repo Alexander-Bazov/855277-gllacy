@@ -1,7 +1,6 @@
 # Личный проект «Глейси»
 
 * Студент: [Aleksandr Bazov](https://up.htmlacademy.ru/htmlcss/22/user/855277).
-* Наставник: `Неизвестно`.
 
 ---
 
