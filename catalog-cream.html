@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси_Базов</title>
+  </head>
+  <body>
+  <header class="header-main">
+  	<div class="logo-header">
+  		<a href="index.html">
+  			<img src="logo-header.jpg" alt="Глейси шоп" width="" height="">
+  		</a>
+  	</div>
+  	<nav class="main-menu">
+  		<ul>
+  			<li>
+  				<a href="#">Каталог</a>
+  				<!--modal window with list menu-->
+  				<!--<ul>
+  					<li><a href="#"><b>Новинки</b></a></li>
+  					<li><a href="catalog.html">Сливочное</a></li>
+  					<li><a href="#">Щербеты</a></li>
+  					<li><a href="#">Фруктовый лед</a></li>
+  					<li><a href="#">Мелорин</a></li>
+  				</ul>-->
+  			</li>
+  			<li><a href="#">Доставка и оплата</a></li>
+  			<li><a href="#About-company">О Компании</a></li>
+  		</ul>
+  	</nav>
+  	<div class="user-menu">
+  		<ul>
+  			<li>Поиск</li>
+  			<li>Вход</li>
+  			<li>Корзина</li>
+  		</ul>
+  	</div>
+  	<p>
+  		C 10 до 20, ежедневно <span width="">8 812 450-25-25</span>
+  	</p>
+  </header>
+  	<main>
+  		<!--Guid nav-->
+  		<nav class="main-guid-nav">
+  			<ul>
+  				<li><a href="index.html">Главная</a></li>
+  				<li><a href="#">Каталог</a></li>
+  				<li>Сливочное</li>
+  			</ul>
+  		</nav>
+  		<!--2 version
+  		<p class="main-guid-nav">
+  			<a href="index.html">Главная</a>&#187;<a href="#">Каталог</a>&#187;Сливочное
+  		</p>
+  		-->
+  		<h1>Сливочное мороженное</h1>
+  		<!--Filter-->
+  		<form name="filter-main" method="post">
+  			<!--Sorting-->
+  			<div class="bar sorting-bar">
+  				<p><b>Сортировка:</b></p>
+  				<select name="sorting-bar">
+  					<option value="s1" selected>по популярности</option>
+  					<option value="s2">сначала недорогие</option>
+  					<option value="s3">сначала дорогие</option>
+  					<option value="s4">по жирности</option>
+  				</select>
+  			</div>
+  			<!--Price tag-->
+  				<p><b>Цена:</b></p>
+  			<!--Fat-->
+  			<div class="bar fat-bar">
+  				<p><b>Жирность:</b></p>
+  				<label>
+  					<input type="radio" name="fat" value="f1">
+  					0%
+  				</label>
+  				<label>
+  					<input type="radio" name="fat" value="f2" checked>
+  					до 10%
+  				</label>
+  				<label>
+  					<input type="radio" name="fat" value="f3">
+  					до 30%
+  				</label>
+  				<label>
+  					<input type="radio" name="fat" value="f4">
+  					выше 30%
+  				</label>
+  			</div>
+  			<!--Ingridients-->
+  			<div class="bar ingridients-bar">
+				<p><b>Наполнители:</b></p> 
+				<p>
+					<input type="checkbox" name="i-chok" value="i1" checked>шоколадные
+					<input type="checkbox" name="i-shugar" value="i2" checked>сахарные присыпки
+					<input type="checkbox" name="i-fruit" value="i3">фрукты
+					<input type="checkbox" name="i-sirup" value="i4">сиропы
+					<input type="checkbox" name="i-jam" value="i5">джемы
+				</p>	
+			</div>
+			<!--button-->
+			<div>
+				<button class="bar bar-btn" name="filter-btn">Применить</button>
+			</div>
+		</form>
+		<!--List-->
+		<section class="list-main">
+  			<h2 class="visually-hidden">Список </h2>
+  			<ul>
+ 		 		<li>
+  					<img src="milk-orange.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>310&#8381<span width="">/кг</span></p>
+  					<a href="#milk-orange">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+  				</li>
+  				<li>
+  					<img src="milk-сhocolate.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>380&#8381<span width="">/кг</span></p>
+  					<a href="#milk-сhocolate">Сливочно-кофейное с кусочками шоколада</a>
+  				</li>
+  				<li>
+  					<img src="milk-strawberry.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>355&#8381<span width="">/кг</span></p>
+  					<a href="#milk-strawberry">Сливочно-клубничное с присыпкой из белого шоколада</a>
+  				</li>
+  				<li>
+  					<img src="milk-caramel.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>415&#8381<span width="">/кг</span></p>
+  					<a href="#milk-caramel">Сливочное крем-брюле с карамельной подливкой</a>
+  				</li>
+  				<li>
+  					<img src="milk-lingonberry.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>325&#8381<span width="">/кг</span></p>
+  					<a href="#milk-lingonberry">Сливочное с брусничным джемом</a>
+  				</li>
+  				<li>
+  					<img src="milk-blueberries.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>410&#8381<span width="">/кг</span></p>
+  					<a href="#milk-blueberries">Сливочно-черничное с цельными ягодами черники</a>
+  				</li>
+  				<li>
+  					<img src="milk-lemon.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>375&#8381<span width="">/кг</span></p>
+  					<a href="#milk-lemon">Сливочно-лимонное с карамельной присыпкой</a>
+  				</li>
+  				<li>
+  					<img src="milk-choco.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>320&#8381<span width="">/кг</span></p>
+  					<a href="#milk-choco">Сливочное с шоколадной стружкой</a>
+  				</li>
+  				<li>
+  					<img src="milk-vanil-choco.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>440&#8381<span width="">/кг</span></p>
+  					<a href="#milk-vanil-choco">Сливочно-ванильное с кусочками шоколада</a>
+  				</li>
+  				<li>
+  					<img src="milk-mentol.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>435&#8381<span width="">/кг</span></p>
+  					<a href="#milk-mentol">Сливочное с ментоловым сиропом</a>
+  				</li>
+  				<li>
+  					<img src="milk-dark-choco.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>355&#8381<span width="">/кг</span></p>
+  					<a href="#milk-dark-choco">Сливочное с кусочками черного шоколада</a>
+  				</li>
+  				<li>
+  					<img src="milk-mint.jpg" alt="Наивкуснейшее мороженное" width="" height="">
+  					<p>420&#8381<span width="">/кг</span></p>
+  					<a href="#milk-mint">Сливочное с мятным сиропом</a>
+  				</li>
+  			</ul>
+  		</section>
+  		<!--Пагинация-->
+  		<div class="pagin-list">
+  			<ul>
+  				<li>1</li>
+  				<li>2</li>
+  				<li>3</li>
+  				<li>4</li>
+  				<li>5</li>
+  			</ul>
+  		</div>
+  	</main>
+<footer>
+  	<!--social-->
+  	<div class="footer-social">
+  		<ul>
+  			<li><a class="social-button" href="#">twitter</a></li>
+  			<li><a class="social-button" href="#">instagram</a></li>
+  			<li><a class="social-button" href="#">facebook</a></li>
+  			<li><a class="social-button" href="#">vkontakte</a></li>
+  		</ul>
+  	</div>
+  	<!--footer-navigation-->
+  	<div class="footer-nav"> 
+  		<ul>
+  			<li><a href="#"><b>Для поставщиков</b></a></li>
+  			<li><a href="#">Наши документы</a></li>
+  			<li><a href="#">О производстве</a></li>
+  			<li><a href="#">Экологические стандарты</a></li>
+  		</ul>
+  	</div>
+  	<!--HTML Academy-->
+  	<div class="footer-html-academy-logo">
+  		<a href="https://htmlacademy.ru/intensive/htmlcss">
+  			<img src="html-academy-logo.png" alt="html Academy">
+		</a>
+	</div>
+  	<p>Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy;2017</p> 
+  </footer>
+  <!--Feedback Form-->
+  <section class="modal Feedback-modal">
+  	<h2>Мы обязательно вам ответим</h2>
+  	<span class="modal-closed">X</span>
+  	<form name="Feedback-modal"method="post">
+  		<p><input type="text" name="Feedback-modal-name" placeholder="Как вас зовут?"></p>
+  		<p><input type="email" name="Feedback-modal-mail" placeholder="Ваша почта для ответа?"></p>
+  		<p><textarea name="Feedback-modal-comment" cols="40" rows="3" placeholder="Напишите что нибудь..."></textarea></p>
+  		<p><input class="button" type="submit" name="Feedback-modal-button" value="Отправить"></p>
+  	</form>
+  </section>
+  <!--Search-->
+  <section class="modal Search-modal">
+  	<form name="Search-modal"method="get">
+  		<p><input type="text" name="Search-modal-field" placeholder="Что ищем?"></p>
+  		<!--кнопка-изображение поиск-->
+  		<!--закрытие окна-->
+  </section>
+  <!--Login-->
+  <section class="modal login-modal">
+  	<form name="login-modal" method="post">
+  		<p><input type="email" name="login-modal-email" placeholder="Электронная почта"></p>
+  		<p><input type="password" name="login-modal-password" placeholder="Пароль"></p>
+  		<p>
+  			<input class="button" type="button" name="login-modal-button" value="Войти">
+  			<a href="#">Забыли пароль?</a><br>
+  			<a href="#">Новая регистра</a> 
+  		</p>
+  	</form>
+  </section>
+  	 <!--list menu header-->
+  <section class="modal menu-modal">
+  	<ul>
+  		<li><a href="#"><b>Новинки</b></a></li>
+  		<li><a href="catalog-cream.html">Сливочное</a></li>
+  		<li><a href="#">Щербеты</a></li>
+  		<li><a href="#">Фруктовый лед</a></li>
+  		<li><a href="#">Мелорин</a></li>
+  	</ul>
+  </section>
+  	 <!--Basket-->
+  <section class="modal basket-modal">
+  	<table>
+  		<tr>
+  			<td>X</td>
+  			<td><img src="" alt="Пломбир с апельсиновым джемом"></td>
+  			<td width="260">Пломбир с апельсиновым джемом</td>
+  			<td>1,5 кг х 200 руб.</td>
+  			<td>300 руб.</td>
+  		</tr>
+  		<tr>
+  			<td>X</td>
+  			<td><img src="" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+  			<td>Клубничный пломбир с присыпкой из белого шоколада</td>
+  			<td>1,5 кг х 300 руб.</td>
+  			<td>450 руб.</td>
+  		</tr>
+  		<tr colspan="5">
+  			<td>Итого: 750 руб.</td>
+  		</tr>
+  	</table>
+  	<button class="button" name="basket-modal-order">Оформить заказ</button>
+  </section>
+  </body>
+  </html>
